@@ -1,0 +1,14 @@
+<h1>Edit your photo</h1>
+
+<form action="/photos/<%= @new_photo_id %>/edit_row">
+<label>Caption:</label>
+<input type="text" value="<%= @previous_caption %>" name="new_caption">
+
+<label>Source:</label>
+<input type="text" value="<%= @previous_source %>" name="new_source">
+
+<button>Edit Photo</button>
+
+<p><a href="/photos">Go Back</a></p>
+
+</form>
